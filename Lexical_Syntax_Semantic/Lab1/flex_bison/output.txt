@@ -1,0 +1,6 @@
+1 -> DIGIT
++ -> PLUS
+2 -> DIGIT
+2 -> DIGIT
+1 -> DIGIT
++ -> PLUS

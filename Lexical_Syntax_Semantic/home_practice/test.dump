@@ -1,0 +1,93 @@
+
+test.o:     file format pe-i386
+
+
+Disassembly of section .text:
+
+00000000 <_main>:
+   0:	55                   	push   ebp
+   1:	89 e5                	mov    ebp,esp
+   3:	83 e4 f0             	and    esp,0xfffffff0
+   6:	83 ec 20             	sub    esp,0x20
+   9:	e8 00 00 00 00       	call   e <_main+0xe>
+   e:	c7 44 24 1c 00 00 00 	mov    DWORD PTR [esp+0x1c],0x0
+  15:	00 
+  16:	c7 44 24 14 0a 00 00 	mov    DWORD PTR [esp+0x14],0xa
+  1d:	00 
+  1e:	c7 44 24 18 00 00 00 	mov    DWORD PTR [esp+0x18],0x0
+  25:	00 
+  26:	c7 44 24 1c 00 00 00 	mov    DWORD PTR [esp+0x1c],0x0
+  2d:	00 
+  2e:	eb 14                	jmp    44 <_main+0x44>
+  30:	8b 44 24 1c          	mov    eax,DWORD PTR [esp+0x1c]
+  34:	8d 50 01             	lea    edx,[eax+0x1]
+  37:	89 54 24 1c          	mov    DWORD PTR [esp+0x1c],edx
+  3b:	01 44 24 18          	add    DWORD PTR [esp+0x18],eax
+  3f:	83 44 24 1c 01       	add    DWORD PTR [esp+0x1c],0x1
+  44:	8b 44 24 1c          	mov    eax,DWORD PTR [esp+0x1c]
+  48:	3b 44 24 14          	cmp    eax,DWORD PTR [esp+0x14]
+  4c:	7c e2                	jl     30 <_main+0x30>
+  4e:	8b 44 24 18          	mov    eax,DWORD PTR [esp+0x18]
+  52:	89 44 24 04          	mov    DWORD PTR [esp+0x4],eax
+  56:	c7 04 24 00 00 00 00 	mov    DWORD PTR [esp],0x0
+  5d:	e8 00 00 00 00       	call   62 <_main+0x62>
+  62:	b8 00 00 00 00       	mov    eax,0x0
+  67:	c9                   	leave  
+  68:	c3                   	ret    
+  69:	90                   	nop
+  6a:	90                   	nop
+  6b:	90                   	nop
+
+Disassembly of section .rdata:
+
+00000000 <.rdata>:
+   0:	25                   	.byte 0x25
+   1:	64 0a 00             	or     al,BYTE PTR fs:[eax]
+
+Disassembly of section .rdata$zzz:
+
+00000000 <.rdata$zzz>:
+   0:	47                   	inc    edi
+   1:	43                   	inc    ebx
+   2:	43                   	inc    ebx
+   3:	3a 20                	cmp    ah,BYTE PTR [eax]
+   5:	28 4d 69             	sub    BYTE PTR [ebp+0x69],cl
+   8:	6e                   	outs   dx,BYTE PTR ds:[esi]
+   9:	47                   	inc    edi
+   a:	57                   	push   edi
+   b:	2e 6f                	outs   dx,DWORD PTR cs:[esi]
+   d:	72 67                	jb     76 <.rdata$zzz+0x76>
+   f:	20 47 43             	and    BYTE PTR [edi+0x43],al
+  12:	43                   	inc    ebx
+  13:	2d 36 2e 33 2e       	sub    eax,0x2e332e36
+  18:	30 2d 31 29 20 36    	xor    BYTE PTR ds:0x36202931,ch
+  1e:	2e 33 2e             	xor    ebp,DWORD PTR cs:[esi]
+  21:	30 00                	xor    BYTE PTR [eax],al
+	...
+
+Disassembly of section .eh_frame:
+
+00000000 <.eh_frame>:
+   0:	14 00                	adc    al,0x0
+   2:	00 00                	add    BYTE PTR [eax],al
+   4:	00 00                	add    BYTE PTR [eax],al
+   6:	00 00                	add    BYTE PTR [eax],al
+   8:	01 7a 52             	add    DWORD PTR [edx+0x52],edi
+   b:	00 01                	add    BYTE PTR [ecx],al
+   d:	7c 08                	jl     17 <.eh_frame+0x17>
+   f:	01 1b                	add    DWORD PTR [ebx],ebx
+  11:	0c 04                	or     al,0x4
+  13:	04 88                	add    al,0x88
+  15:	01 00                	add    DWORD PTR [eax],eax
+  17:	00 1c 00             	add    BYTE PTR [eax+eax*1],bl
+  1a:	00 00                	add    BYTE PTR [eax],al
+  1c:	1c 00                	sbb    al,0x0
+  1e:	00 00                	add    BYTE PTR [eax],al
+  20:	04 00                	add    al,0x0
+  22:	00 00                	add    BYTE PTR [eax],al
+  24:	69 00 00 00 00 41    	imul   eax,DWORD PTR [eax],0x41000000
+  2a:	0e                   	push   cs
+  2b:	08 85 02 42 0d 05    	or     BYTE PTR [ebp+0x50d4202],al
+  31:	02 65 c5             	add    ah,BYTE PTR [ebp-0x3b]
+  34:	0c 04                	or     al,0x4
+  36:	04 00                	add    al,0x0

@@ -1,0 +1,18 @@
+int -> DATATYPE
+a -> IDENTIFIER
+= -> ASSIGN
+10 -> DIGIT
+; -> SemiColon
+
+while -> KEYWORKD
+( -> LEFT_PARENTHESIS
+1 -> DIGIT
+) -> RIGHT_PARENTHESIS
+{ -> LEFT_BRACE
+
+a -> IDENTIFIER
+++ -> INCREMENT
+; -> SemiColon
+
+} -> RIGHT_BRACE
+Parsing Finshed

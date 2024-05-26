@@ -1,0 +1,7 @@
+Dim -> DIM
+a -> ID
+As -> AS
+Single -> SINGLE_TYPE
+
+Dim -> DIM
+Parsing Finshed

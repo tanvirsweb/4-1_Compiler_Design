@@ -1,0 +1,9 @@
+Dim a As Single
+Dim b As Integer
+
+a := 10
+b := 20.5
+
+b := a + b
+
+c := b-a

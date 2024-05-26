@@ -1,0 +1,17 @@
+ret type int main()
+
+{
+
+var type float a = 9;
+
+var type  int b = 5;
+
+if(a+b>10){
+
+var type double c = 90.7;
+
+}
+
+return 0;
+
+}

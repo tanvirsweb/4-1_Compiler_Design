@@ -1,0 +1,1 @@
+void HelloPrint();//declare function

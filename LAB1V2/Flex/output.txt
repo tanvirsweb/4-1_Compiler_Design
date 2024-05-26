@@ -1,0 +1,6 @@
+a -> ID
+= -> ASSIGN
+b -> ID
++ -> ADDOP
+c -> ID
+; -> SEMICOLON

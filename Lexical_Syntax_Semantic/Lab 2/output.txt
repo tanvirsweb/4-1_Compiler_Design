@@ -1,0 +1,4 @@
+10 -> NUM
++ -> PLUS
+2 -> NUM
+Parsing Finshed
