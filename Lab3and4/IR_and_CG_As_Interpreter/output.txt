@@ -1,0 +1,64 @@
+In line no 1, Inserting a with type INT_TYPE in symbol table.
+In line no 2, Inserting b with type INT_TYPE in symbol table.
+In line no 3, Inserting c with type INT_TYPE in symbol table.
+Parsing finished!
+============= INTERMEDIATE CODE===============
+  0: start              -1
+  1: ld_int             10
+  2: store               0
+  3: scan_int_value      1
+  4: ld_var              0
+  5: ld_var              1
+  6: sub                -1
+  7: ld_int             10
+  8: sub                -1
+  9: ld_int             20
+ 10: add                -1
+ 11: store               2
+ 12: print_int_value     2
+ 13: halt               -1
+============= RUN CODE IN VIRTUAL MACHINE ===============
+
+;start -1
+PC =   0 IR.arg =       -1 AR =   0 Top =   0,       0
+
+;ld_int 10
+PC =   1 IR.arg =       10 AR =   0 Top =   0,       0
+
+;store 0
+PC =   2 IR.arg =        0 AR =   0 Top =   1,      10
+
+;scan_int_value 1
+PC =   3 IR.arg =        1 AR =   0 Top =   0,      10
+
+;ld_var 0
+PC =   4 IR.arg =        0 AR =   0 Top =   0,      10
+
+;ld_var 1
+PC =   5 IR.arg =        1 AR =   0 Top =   1,      10
+
+;sub -1
+PC =   6 IR.arg =       -1 AR =   0 Top =   2,      10
+
+;ld_int 10
+PC =   7 IR.arg =       10 AR =   0 Top =   1,       0
+
+;sub -1
+PC =   8 IR.arg =       -1 AR =   0 Top =   2,      10
+
+;ld_int 20
+PC =   9 IR.arg =       20 AR =   0 Top =   1,     -10
+
+;add -1
+PC =  10 IR.arg =       -1 AR =   0 Top =   2,      20
+
+;store 2
+PC =  11 IR.arg =        2 AR =   0 Top =   1,      10
+
+;print_int_value 2
+PC =  12 IR.arg =        2 AR =   0 Top =   0,      10
+10
+
+;halt -1
+PC =  13 IR.arg =       -1 AR =   0 Top =  -1,       0
+halt
